@@ -82,7 +82,7 @@ bool GetDisabled(IBusEngine *engine) {
 #if IBUS_CHECK_VERSION(1, 5, 0)
 const bool kActivatedOnLaunch = false;
 #else
-const bool kActivatedOnLaunch = true;
+const bool kActivatedOnLaunch = false;  //true
 #endif  // IBus>=1.5.0
 
 }  // namespace
