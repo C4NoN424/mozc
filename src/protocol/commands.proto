@@ -48,8 +48,8 @@ option java_package = "org.mozc.android.inputmethod.japanese.protobuf";
 // This enum is used by SessionCommand::input_mode with
 // CHANGE_INPUT_MODE and Output::mode.
 enum CompositionMode {
-  DIRECT = 0;
-  HIRAGANA = 1;
+  HIRAGANA = 0;
+  DIRECT = 1;
   FULL_KATAKANA = 2;
   HALF_ASCII = 3;
   FULL_ASCII = 4;
