@@ -80,9 +80,9 @@ bool GetDisabled(IBusEngine *engine) {
 // On IBus 1.4.x, IBus expects that an IME should always be turned on and
 // IME on/off keys are handled by IBus itself rather than each IME.
 #if IBUS_CHECK_VERSION(1, 5, 0)
-const bool kActivatedOnLaunch = false;
+const bool kActivatedOnLaunch = true;   //false
 #else
-const bool kActivatedOnLaunch = false;  //true
+const bool kActivatedOnLaunch = true;
 #endif  // IBus>=1.5.0
 
 }  // namespace
